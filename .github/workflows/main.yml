@@ -26,4 +26,7 @@ jobs:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
           heroku_app_name: ${{secrets.HEROKU_APP_NAME}}
           heroku_email: ${{secrets.HEROKU_EMAIL}}
-          env_file: ".env"
+        env:
+          HD_SPOTIPY_CLIENT_ID: ${{secrets.SPOTIPY_CLIENT_ID}}
+          HD_SPOTIPY_CLIENT_SECRET: ${{secrets.SPOTIPY_CLIENT_SECRET}}
+          HD_SPOTIPY_REDIRECT_URI: ${{secrets.SPOTIPY_REDIRECT_URI}}
