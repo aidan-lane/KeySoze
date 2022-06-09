@@ -10,11 +10,6 @@ import matplotlib.pyplot as plt
 
 scope = "user-library-read"
 
-sp = spotipy.Spotify(auth_manager=SpotifyOAuth(client_id="61be428ecfad4c7c928efa13d150f7ea",
-                                               client_secret="be7e45683c6f45e49662a6d2672b9c0a",
-                                               redirect_uri="http://127.0.0.1:9090",
-                                               scope=scope))
-
 mappings = [[7, 21], [8, 22], [9, 23], [10, 12], [11, 13], [0, 14], [1, 15], [2, 16], [3, 17], [4, 18], [5, 19], [6, 20],
             [19, 3], [20, 4], [21, 5], [22, 6], [23, 7], [12, 8], [13, 19], [14, 10], [15, 11], [16, 0], [17, 1], [18, 2]]
 

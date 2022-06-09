@@ -5,3 +5,7 @@ itsdangerous==1.1.0
 Jinja2==2.11.3
 MarkupSafe==1.1.1
 Werkzeug==1.0.1
+spotipy==2.19.0
+flask-session==0.4.0
+networkx==2.8.3
+python-dotenv==0.20.0
