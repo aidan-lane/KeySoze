@@ -8,6 +8,20 @@
         rel="stylesheet"
     />
     <title>KeySoze</title>
+    <script type="text/javascript">
+      var data = '{{ data|tojson }}';
+      var auth = JSON.parse(data);
+      var token = auth.access_token;
+
+      var url = "http://localhost:5000/sort?"
+      fetch(url + new URLSearchParams({
+        url: "https://open.spotify.com/playlist/4NeEYWR3ewvbg263liHWuD?si=b84caa85094844ed"
+      }), data= {
+        method: "POST",
+        body: token
+      })
+        .then(response => console.log(response));
+    </script>
   </head>
   <body>
     <div class="relative pt-6 pb-16 sm:pb-24">

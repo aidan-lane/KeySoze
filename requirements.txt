@@ -9,3 +9,4 @@ spotipy==2.19.0
 flask-session==0.4.0
 networkx==2.8.3
 python-dotenv==0.20.0
+flask-cors==3.0.10
